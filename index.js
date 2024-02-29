@@ -29,16 +29,14 @@ function passwordGenerator() {
 }
 
 // Copy to Clipboard
-function copyTextToClipboard(text) {
-    navigator.clipboard.writeText(text)
-      .then(() => { 
-        alert("Copied to clipboard!");
-      })
-  }
-  
-  copyword.forEach( copyindex => {
-    copyindex.addEventListener("click", () => {
-      const textToCopy = copyindex.textContent;
-      copyTextToClipboard(textToCopy);
-    });
-  });
+function copy1()
+{
+    window.getSelection().selectAllChildren(document.getElementById("input1"));
+    document.execCommand("Copy");
+}
+
+function copy2()
+{
+    window.getSelection().selectAllChildren(document.getElementById("input2"));
+    document.execCommand("Copy");
+}

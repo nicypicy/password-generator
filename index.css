@@ -1,15 +1,14 @@
 * {
     box-sizing: border-box;
-    
-    padding: 4px;
-    
+  }
+  html {
+    height: 100%;
 }
-
-html, body {
-
+ body {
+    min-height: 100%;
     background: #ECFDF5;
    box-sizing: border-box;
-    
+   padding: 1rem;
 }
 
 h1 {
@@ -86,4 +85,9 @@ button:hover {
 
 #input1:hover , #input2:hover {
     background: #003459
+}
+
+#help {
+    font-size: medium;
+    margin-top: 2rem;
 }

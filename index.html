@@ -2,6 +2,7 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>Password Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -16,9 +17,10 @@
             </div>
             <div id="middle-line"></div>
             <div class="input">
-                 <div id="input1" class="copy-password"> </div>
-                <div id="input2" class="copy-password"> </div>
+                 <div id="input1" class="copy-password" onclick="copy1()"> </div>
+                <div id="input2" class="copy-password" onclick="copy2()"> </div>
             </div>
+            <h3 id="help">(Copy the text by clicking on it)</h3>
         </div>
         <script src="index.js"></script>
        
